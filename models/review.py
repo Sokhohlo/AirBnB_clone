@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-"""Module for Review class."""
-
+"""Defines one class, `Review()`,
+Sub-classes the `BaseModel()` class.`
+"""
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Class representing a Review."""
-    place_id = ""
-    user_id = ""
+    """
+    It represents a review posted by the users
+    of the application about a place/house.
+    A review of a place/house.
+    """
     text = ""
+    user_id = ""
+    place_id = ""
